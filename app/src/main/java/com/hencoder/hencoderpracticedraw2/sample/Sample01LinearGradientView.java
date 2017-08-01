@@ -26,6 +26,7 @@ public class Sample01LinearGradientView extends View {
     }
 
     {
+        //线性渐变
         paint.setShader(new LinearGradient(100, 100, 500, 500, Color.parseColor("#E91E63"),
                 Color.parseColor("#2196F3"), Shader.TileMode.CLAMP));
     }

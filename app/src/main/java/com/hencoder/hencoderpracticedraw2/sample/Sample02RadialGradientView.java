@@ -3,7 +3,6 @@ package com.hencoder.hencoderpracticedraw2.sample;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.RadialGradient;
 import android.graphics.Shader;
@@ -27,6 +26,7 @@ public class Sample02RadialGradientView extends View {
     }
 
     {
+        //辐射渐变
         paint.setShader(new RadialGradient(300, 300, 200, Color.parseColor("#E91E63"),
                 Color.parseColor("#2196F3"), Shader.TileMode.CLAMP));
     }

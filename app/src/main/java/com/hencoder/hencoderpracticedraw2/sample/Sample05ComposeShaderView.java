@@ -31,6 +31,7 @@ public class Sample05ComposeShaderView extends View {
     }
 
     {
+        //混合着色器
         setLayerType(LAYER_TYPE_SOFTWARE, null);
 
         Bitmap bitmap1 = BitmapFactory.decodeResource(getResources(), R.drawable.batman);

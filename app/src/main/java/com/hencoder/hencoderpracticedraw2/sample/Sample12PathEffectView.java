@@ -18,9 +18,9 @@ import android.view.View;
 public class Sample12PathEffectView extends View {
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     Path path = new Path();
-    PathEffect cornerPathEffect = new CornerPathEffect(20);
-    PathEffect discretePathEffect = new DiscretePathEffect(20, 5);
-    PathEffect dashPathEffect = new DashPathEffect(new float[]{20, 10, 5, 10}, 0);
+    PathEffect cornerPathEffect = new CornerPathEffect(20);//把所有拐角变成圆角
+    PathEffect discretePathEffect = new DiscretePathEffect(20, 5);//把线条进行随机的偏离，让轮廓变得乱七八糟。
+    PathEffect dashPathEffect = new DashPathEffect(new float[]{20, 10, 5, 10}, 0);//使用虚线来绘制线条。
     PathEffect pathDashPathEffect;
     PathEffect sumPathEffect = new SumPathEffect(dashPathEffect, discretePathEffect);
     PathEffect composePathEffect = new ComposePathEffect(dashPathEffect, discretePathEffect);
@@ -51,7 +51,7 @@ public class Sample12PathEffectView extends View {
         dashPath.lineTo(20, -30);
         dashPath.lineTo(40, 0);
         dashPath.close();
-        pathDashPathEffect = new PathDashPathEffect(dashPath, 50, 0, PathDashPathEffect.Style.MORPH);
+        pathDashPathEffect = new PathDashPathEffect(dashPath, 50, 0, PathDashPathEffect.Style.MORPH);//使用一个 Path 来绘制「虚线」。
     }
 
     @Override

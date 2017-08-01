@@ -36,6 +36,9 @@ public class Sample10StrokeJoinView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+        //设置拐角的形状
+
+
         canvas.save();
 
         canvas.translate(100, 100);

@@ -24,7 +24,7 @@ public class Sample13ShadowLayerView extends View {
     }
 
     {
-        paint.setShadowLayer(10, 5, 5, Color.RED);
+        paint.setShadowLayer(10, 15, 5, Color.RED);
     }
 
     @Override

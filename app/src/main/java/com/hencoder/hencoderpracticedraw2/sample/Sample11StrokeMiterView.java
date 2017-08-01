@@ -38,6 +38,8 @@ public class Sample11StrokeMiterView extends View {
 
         canvas.save();
 
+        //设置的是「 线条在 Join 类型为  MITER 时对于 MITER 的长度限制」
+
         canvas.translate(100, 100);
         paint.setStrokeMiter(1);
         canvas.drawPath(path, paint);
